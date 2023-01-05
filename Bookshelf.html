@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+     <title>Bookshelf App</title>
+     <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+     <div class="header">
+          <h1>Digital Bookshelf</h1>
+     </div>
+
+     <div class="body">
+
+          <div class="wrapper">
+               <section id="header">
+                    <img src="reading.jpg" width="450" height="350" id="reading">
+
+                    <div class="header_text">
+                         <p>“A reader lives a thousand lives before he dies . The man who never reads lives only one.”
+                         </p>
+                         <p class="btn_text"><a class="btn_start" onclick="openaddform()">Start reading now !</a></p>
+                    </div>
+               </section>
+          </div>
+
+          <div class="addformdata" hidden>
+               <form id="addform" autocomplete="off" name="form">
+                    <h2>What book are you reading now ? </h2>
+
+                    <label id="label_text">Book title</label>
+                    <input type="text" id="booktitle" name="booktitle" placeholder="Title" required>
+                    <div class="erorr_message"></div>
+
+                    <label id="label_text">Book author</label>
+                    <input type="text" id="bookauthor" name="bookauthor" placeholder="Author" required>
+                    <div class="erorr_message"></div>
+
+                    <label id="label_text">Book publisher</label>
+                    <input type="text" id="bookpublisher" name="bookpublisher" placeholder="Publisher" required>
+                    <div class="erorr_message"></div>
+
+                    <label id="label_text">Book year</label>
+                    <input type="number" id="bookyear" name="bookyear" placeholder="Year" required>
+                    <div class="erorr_message"></div>
+
+                    <div class="checkbox_done">
+                         <input type="checkbox" id="cbdone" name="cbdone">
+                         <label for="done" id="done">This book already been read</label>
+                    </div>
+
+                    <input type="submit" value="Submit" name="submit" id="btn_submit" class="btn-submit" />
+                    <input type="reset" value="Reset" name="reset" id="btn_reset" onclick="resetalert()"
+                         class="btn-reset" />
+                    <input type="button" value="Close" name="reset" id="btn_close" class="btn-close" />
+
+               </form>
+          </div>
+
+          <div class="search">
+               <img className="image-search" src="search.svg" alt="search" width="20px" height="20px" />
+               <input id="search" className="search-note" placeholder="Search note here...." onkeyup="filter()"
+                    autocomplete="off" />
+
+          </div>
+
+          <h2 id="text_unfinished">Recently read</h2>
+          <div class="containerbook" id="unfinished">
+          </div>
+
+          <h2 id="text_finished">Finished book</h2>
+          <div class="containerbook" id="finished">
+          </div>
+
+          <div class="editbookdata" hidden>
+               <form id="editform" autocomplete="off" name="form">
+                    <h2>Edit book data </h2>
+                    <button id="close">X</button>
+
+                    <label id="label_text">Book title</label>
+                    <input type="text" id="e_booktitle" name="e_booktitle" placeholder="Title">
+
+                    <label id="label_text">Book author</label>
+                    <input type="text" id="e_bookauthor" name="e_bookauthor" placeholder="Author">
+
+                    <label id="label_text">Book publisher</label>
+                    <input type="text" id="e_bookpublisher" name="e_bookpublisher" placeholder="Publisher">
+
+                    <label id="label_text">Book year</label>
+                    <input type="number" id="e_bookyear" name="e_bookyear" placeholder="Year">
+
+                    <div class="edit_checkbox_done">
+                         <input type="checkbox" id="e_cbdone" name="e_cbdone">
+                         <label for="e_done" id="e_done">This book already been read</label>
+                    </div>
+
+                    <input type="submit" value="Submit" name="e_submit" id="e_btn_submit" class="btn-submit" />
+               </form>
+          </div>
+
+     </div>
+     <script src="BookData.js"></script>
+     <script src="DOM.js"></script>
+     <script src="Code.js"></script>
+     </div>
+</body>
+
+</html>

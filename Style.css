@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: QuickSand;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 16px;
+    background-color: #92b4ec;
+}
+
+.header h1 {
+    margin: 8px 0;
+    flex: 1;
+    color: black;
+    background-color: transparent;
+}
+
+.body {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.body h2 {
+    font-weight: normal;
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+#addform {
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 50px;
+    padding: 5px;
+    border-style: dashed;
+}
+
+#editform {
+    margin: 100 auto;
+    max-width: 900px;
+    margin-bottom: 100px;
+    padding: 5px;
+}
+
+.wrapper {
+    margin: auto;
+    position: relative;
+}
+
+.addform {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 48px;
+}
+
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input ::placeholder {
+    color: black;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+#booktitle,
+#bookauthor,
+#bookyear,
+#bookpublisher,
+#btn_submit,
+#btn_reset,
+.search,
+#e_booktitle,
+#e_bookauthor,
+#e_bookyear,
+#e_bookpublisher,
+#e_btn_submit,
+#btn_close {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.header_text {
+    margin-top: 60px;
+    max-width: 500px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.btn_start {
+    background-color: #ff3860;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn_text {
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 40px 0px;
+}
+
+#label_text {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#booktitle {
+    font-weight: 700;
+}
+
+#btn_submit,
+#e_btn_submit {
+    width: 90%;
+    background-color: #F9665E;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#btn_close {
+    width: 90%;
+    background-color: #CFCFC4;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#btn_reset {
+    width: 90%;
+    background-color: #FDFD96;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.checkbox_done,
+.edit_checkbox_done {
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+#text_unfinished,
+#text_finished {
+    margin: 20px;
+}
+
+.erorr_message input {
+    border-color: #ff3860;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#search {
+    border-style: none;
+    display: flex;
+    width: 100%;
+    margin: 2px 6px;
+}
+
+.image-search {
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.search {
+    border: solid 2px;
+    margin-bottom: 20px;
+}
+
+
+
+.action_card {
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+}
+
+.edit-button,
+.delete-button,
+.done-button {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.editbookdata {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+}
+
+#editform {
+    background-color: white;
+    min-width: 500px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#close {
+    border: none;
+    background: none;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    left: 2px;
+}
+
+.container {
+    font-size: 20px;
+    background-color: #B0E9D5;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.isi {
+    font-weight: normal;
+    text-align: justify;
+    font-size: 15px;
+    margin: 10px;
+    flex: 1 1;
+}
+
+.containerbook {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content);
+    gap: 15px;
+    margin-bottom: 48px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.judul {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#list-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content);
+    gap: 15px;
+    margin-bottom: 48px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .containerbook {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .containerbook {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        display: block;
+
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .header_text {
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+}
